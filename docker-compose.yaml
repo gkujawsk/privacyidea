@@ -1,0 +1,11 @@
+version: '3'
+services:
+  privacyidea:
+    build: privacyidea
+    ports:
+      - "5000:5000"
+  freeradius:
+    build: freeradius
+    ports:
+      - "1812:1812"
+      - "1813:1813"
